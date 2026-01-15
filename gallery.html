@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>SillySize | Gallery</title>
+     <link rel="icon" type="image/png" href="web/images/logomain.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="web/css/style.css">
+
+</head>
+<body>
+   <!-- header start -->
+    <!-- topest nav -->
+    <div class="toppestnav">
+        <p>10% off on this Christmas and New Year</p>
+    </div>
+    <!-- middle nav -->
+    <div class="middlenav">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div>
+                <img src="web/images/logomain.png" width="60" class="mypointer" onclick="location.href='index.html'"
+                    alt="">
+            </div>
+            <div>
+                <i class="bi bi-person-circle mypointer" onclick="location.href='login.html'"></i>
+                <i class="bi bi-heart mypointer" onclick="location.href='wishlist.html'"></i>
+                <i class="bi bi-cart3 mypointer" onclick="location.href='cart.html'"></i>
+                <i class="bi bi-three-dots-vertical openmenu d-lg-none mypointer"></i>
+            </div>
+        </div>
+    </div>
+    <!-- bottom nav -->
+    <nav>
+        <div class="container d-flex align-items-center">
+            <p class="ourallcatg">
+                <i class="bi bi-list-nested"></i> All Categories
+            </p>
+            <div class="d-lg-block d-none">
+                <ul class="d-flex gap-5">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header end -->
+  <!-- category list -->
+   <div class="categorymenu">
+        <div class="pb-5">
+            <div class="categorymenuclose">
+                <i class="bi bi-x categorymenuclosebtn"></i>
+                <p class="mb-0">CATEGORIES</p>
+            </div>
+            <ul>
+<ul class="category-list">
+
+    <!-- TOP WEARS -->
+    <li class="has-dropdown">
+        <div class="d-flex align-items-center dropdown-toggle">
+            <img src="web/images/ctglist/shirt.png" alt="">
+            <p>Top Wears</p>
+            <i class="bi bi-caret-right-fill arrow"></i>
+        </div>
+
+        <ul class="submenu">
+            <li><img src="web/images/tshirts-removebg-preview.png"> T-Shirts</li>
+            <li><img src="web/images/shirts-removebg-preview.png"> Shirts</li>
+            <li><img src="web/images/polos-removebg-preview.png"> Polos</li>
+            <li><img src="web/images/oversized-removebg-preview.png"> Over Sized</li>
+            <li><img src="web/images/sweat-shirt.png"> Sweat Shirts</li>
+            <li><img src="web/images/ctglist/hoodie.png"> Hoodies</li>
+            <li><img src="web/images/ctglist/denim-jacket.png"> Denim Jackets</li>
+            <li><img src="web/images/sweater.png"> Knit Wears</li>
+        </ul>
+    </li>
+
+    <!-- BOTTOM WEARS -->
+    <li class="has-dropdown">
+        <div class="d-flex align-items-center dropdown-toggle">
+            <img src="web/images/ctglist/bottom.png">
+            <p>Bottom Wears</p>
+            <i class="bi bi-caret-right-fill arrow"></i>
+        </div>
+
+        <ul class="submenu">
+            <li><img src="web/images/ctglist/jeans.png"> Jeans</li>
+            <li><img src="web/images/ctglist/pants.png"> Baggy Jeans</li>
+            <li><img src="web/images/chinos-pants.png"> Chinos</li>
+            <li><img src="web/images/ctglist/woman.png"> Linen Pants</li>
+            <li><img src="web/images/ctglist/jogger-pants.png"> Joggers</li>
+            <li><img src="web/images/ctglist/clothes.png"> Cargo</li>
+            <li><img src="web/images/ctglist/shorts.png"> Shorts</li>
+        </ul>
+    </li>
+
+    <!-- FOOT WEARS -->
+    <li class="has-dropdown">
+        <div class="d-flex align-items-center dropdown-toggle">
+            <img src="web/images/ctglist/boot.png">
+            <p>Foot Wears</p>
+            <i class="bi bi-caret-right-fill arrow"></i>
+        </div>
+
+        <ul class="submenu">
+            <li><img src="web/images/ctglist/sneakers.png"> Sneakers</li>
+            <li><img src="web/images/ctglist/loafers.png"> Loafers</li>
+            <li><img src="web/images/ctglist/boots.png"> Boots</li>
+            <li><img src="web/images/ctglist/sandal.png"> Sandals</li>
+            <li><img src="web/images/ctglist/socks.png"> Socks</li>
+        </ul>
+    </li>
+
+    <!-- ACCESSORIES -->
+    <li class="has-dropdown">
+        <div class="d-flex align-items-center dropdown-toggle">
+            <img src="web/images/ctglist/accessory.png">
+            <p>Accessories</p>
+            <i class="bi bi-caret-right-fill arrow"></i>
+        </div>
+
+        <ul class="submenu">
+            <li><img src="web/images/ctglist/cap.png"> Caps</li>
+            <li><img src="web/images/ctglist/wristwatch.png"> Watches</li>
+            <li><img src="web/images/smart.png"> Bracelet</li>
+            <li><img src="web/images/ctglist/sunglasses.png"> Glasses</li>
+            <li><img src="web/images/ctglist/belt.png"> Belts</li>
+            <li><img src="web/images/earringggg.png"> Earrings</li>
+            <li><img src="web/images/ctglist/tie.png"> Tie</li>
+        </ul>
+    </li>
+</ul>
+
+                <li>
+                    <div class="d-flex align-items-center">
+                        <img src="web/images/trending.png"  alt="">
+                        <p>Trending SillySize</p>
+                    </div>
+                    <i class="bi bi-caret-right-fill"></i>
+                </li>
+
+                <li>
+                    <div class="d-flex align-items-center">
+                        <img src="web/images/price-tag.png"  alt="">
+                        <p>Offer / Sale</p>
+                    </div>
+                    <i class="bi bi-caret-right-fill"></i>
+                </li>
+
+                <li>
+                    <div class="d-flex align-items-center">
+                        <img src="web/images/information-button.png"  alt="">
+                        <p>About Us</p>
+                    </div>
+                    <i class="bi bi-caret-right-fill"></i>
+                </li>
+
+                <li>
+                    <div class="d-flex align-items-center">
+                        <img src="web/images/add.png"  alt="">
+                        <p>Our Stories</p>
+                    </div>
+                    <i class="bi bi-caret-right-fill"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- menu start -->
+    <section class="menu">
+        <div>
+            <div class="text-end">
+                <i class="bi bi-x menuclosebtn"></i>
+            </div>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>SHOP</li>
+                <li>GALLERY</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+    </section>
+    <!-- menu end -->
+
+       <!-- small banner -->
+
+    <div class="smallbanner">
+        <img src="web/images/multi boy banner copy.png" class="img-fluid" alt="">
+        <div class="container">
+            <h1 class="playfair-display-font">Gallery</h1>
+            <p><span onclick="location.href='index.html'" style="cursor: pointer;">HOME /</span> GALLERY</p>
+        </div>
+    </div>
+
+<!-- gallery section -->
+
+<section class="my-3">
+    <div class="container">
+         <div class="text-center selectdiv d-flex gap-5 align-items-center justify-content-center">
+                <p class="oursmallmainheading mb-0 activediv" id="imgTab">IMAGES</p>
+
+                <p class="oursmallmainheading mb-0" id="videoTab">VIDEOS</p>
+            </div>
+        <!-- gallery -->
+        <div class="row g-1 my-3" id="imageSection">
+            <div class="col-xl-3 col-md-4 col-6">
+                <div>
+                    <img src="web/images/categoryimg1.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+             <div class="col-xl-3 col-md-4 col-6">
+                <div>
+                    <img src="web/images/categoryimg1.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+             <div class="col-xl-3 col-md-4 col-6">
+                <div>
+                    <img src="web/images/categoryimg1.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+             <div class="col-xl-3 col-md-4 col-6">
+                <div>
+                    <img src="web/images/categoryimg1.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+             <div class="col-xl-3 col-md-4 col-6">
+                <div>
+                    <img src="web/images/categoryimg1.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+             <div class="col-xl-3 col-md-4 col-6">
+                <div>
+                    <img src="web/images/categoryimg1.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+             <div class="col-xl-3 col-md-4 col-6">
+                <div>
+                    <img src="web/images/categoryimg1.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+             <div class="col-xl-3 col-md-4 col-6">
+                <div>
+                    <img src="web/images/categoryimg1.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- videos -->
+          <!-- <div class="text-center my-3">
+                <p class="oursmallmainheading mb-0">Our videos</p>
+            </div> -->
+       <div class="row g-1 my-3" id="videoSection">
+        <div class="col-xl-3 col-md-4 col-sm-6">
+            <div>
+                <video src="web/images/853800-hd_1920_1080_25fps.mp4" muted autoplay loop width="100%"></video>
+            </div>
+        </div>
+         <div class="col-xl-3 col-md-4 col-sm-6">
+            <div>
+                <video src="web/images/853800-hd_1920_1080_25fps.mp4" muted autoplay loop width="100%"></video>
+            </div>
+        </div>
+         <div class="col-xl-3 col-md-4 col-sm-6">
+            <div>
+                <video src="web/images/853800-hd_1920_1080_25fps.mp4" muted autoplay loop width="100%"></video>
+            </div>
+        </div>
+         <div class="col-xl-3 col-md-4 col-sm-6">
+            <div>
+                <video src="web/images/853800-hd_1920_1080_25fps.mp4" muted autoplay loop width="100%"></video>
+            </div>
+        </div>
+         <div class="col-xl-3 col-md-4 col-sm-6">
+            <div>
+                <video src="web/images/853800-hd_1920_1080_25fps.mp4" muted autoplay loop width="100%"></video>
+            </div>
+        </div>
+         <div class="col-xl-3 col-md-4 col-sm-6">
+            <div>
+                <video src="web/images/853800-hd_1920_1080_25fps.mp4" muted autoplay loop width="100%"></video>
+            </div>
+        </div>
+       </div>
+    </div>
+</section>
+
+<!-- gallery section -->
+
+    <!-- footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-md-4 col-sm-6">
+                    <div>
+                        <img src="web/images/logomain.png" width="100" class="mypointer" onclick="location.href='index.html'" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div>
+                        <h4>Quick Linkes</h4>
+                        <ul>
+                            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+                            <li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li>
+                            <li><a href="shop.html"><i class="bi bi-chevron-right"></i> Shop</a></li>
+                            <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+                            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="cntus">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><a href=""><i class="bi bi-telephone"></i> +91 23423 46545</a></li>
+                            <li><a href=""><i class="bi bi-envelope"></i> info@sillysize.com</a></li>
+                        </ul>
+
+                        <div class="iconss mt-4">
+
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-whatsapp"></i>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottomfooter">
+        <a href="https://tssgtech.com/" target="_blank">© 2025 All Rights Reserved | Developed by Tssg-Tech.</a>
+    </div>
+
+     <script src="web/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+   <script>
+const imgTab = document.getElementById("imgTab");
+const videoTab = document.getElementById("videoTab");
+
+const imageSection = document.getElementById("imageSection");
+const videoSection = document.getElementById("videoSection");
+ videoSection.classList.add("d-none");
+
+imgTab.addEventListener("click", () => {
+    imageSection.classList.remove("d-none");
+    videoSection.classList.add("d-none");
+
+    imgTab.classList.add("activediv");
+    videoTab.classList.remove("activediv");
+});
+
+videoTab.addEventListener("click", () => {
+    videoSection.classList.remove("d-none");
+    imageSection.classList.add("d-none");
+
+    videoTab.classList.add("activediv");
+    imgTab.classList.remove("activediv");
+});
+</script>
+
+</body>
+</html>

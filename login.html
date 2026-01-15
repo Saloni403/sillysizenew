@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SillySize | Login</title>
+     <link rel="icon" type="image/png" href="web/images/logomain.png">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+     <link rel="stylesheet" href="web/css/style.css">
+    
+</head>
+<body>
+    
+<section class="login-section">
+  <div class="container">
+    <div class="row align-items-center justify-content-center login-card">
+
+      <!-- Left Image -->
+      <div class="col-lg-6 d-none d-lg-block px-0">
+        <div class="login-img-wrapper">
+          <img src="web/images/categoryimg1.jpg" class="img-fluid" alt="Login Banner">
+        </div>
+      </div>
+
+      <!-- Right Form -->
+     <div class="col-lg-6 col-md-8 col-sm-10">
+  <div class="login-form-wrapper position-relative">
+
+    <!-- Close Icon -->
+    <i class="bi bi-x-lg close-icon" onclick="history.back()"></i>
+
+    <h2 class="mb-4" id="formTitle">
+      Login to <span class="brand-name">SillySize</span>
+    </h2>
+
+    <!-- LOGIN FORM -->
+    <form id="loginForm">
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Enter Email" required>
+      </div>
+
+      <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Enter Password" required>
+      </div>
+
+      <button type="submit" class="btn btn-dark w-100 mt-3" onclick="location.href='userprofile.html'">
+        Login
+      </button>
+    </form>
+
+    <!-- SIGNUP FORM (HIDDEN) -->
+    <form id="signupForm" style="display:none;">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Full Name" required>
+      </div>
+
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Email Address" required>
+      </div>
+
+      <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Create Password" required>
+      </div>
+
+      <button type="submit" class="btn btn-dark w-100 mt-3">
+        Sign Up
+      </button>
+    </form>
+
+    <div class="extra-links text-center mt-4">
+      <p><a href="#">Forgot Password?</a></p>
+
+      <p id="toggleText">
+        New here?
+        <span class="register-link" onclick="toggleForm()">Register Now</span>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+ <script src="web/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+       <script>
+  function toggleForm() {
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");
+    const formTitle = document.getElementById("formTitle");
+    const toggleText = document.getElementById("toggleText");
+
+    if (loginForm.style.display !== "none") {
+      loginForm.style.display = "none";
+      signupForm.style.display = "block";
+      formTitle.innerHTML = 'Create Account on <span class="brand-name">SillySize</span>';
+      toggleText.innerHTML = `
+        Already have an account?
+        <span class="register-link" onclick="toggleForm()">Login</span>
+      `;
+    } else {
+      signupForm.style.display = "none";
+      loginForm.style.display = "block";
+      formTitle.innerHTML = 'Login to <span class="brand-name">SillySize</span>';
+      toggleText.innerHTML = `
+        New here?
+        <span class="register-link" onclick="toggleForm()">Register Now</span>
+      `;
+    }
+  }
+</script>
+
+
+</body>
+</html>
