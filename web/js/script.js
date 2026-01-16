@@ -25,3 +25,10 @@ menuclosebtn.addEventListener("click",()=>{
     menu.style.top="-350px";
      document.body.style.overflow="auto";
 })
+
+
+document.querySelectorAll(".has-dropdown").forEach(item => {
+    item.querySelector(".dropdown-toggle").addEventListener("click", () => {
+        item.classList.toggle("active");
+    });
+});
