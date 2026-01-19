@@ -493,42 +493,6 @@
                     div.classList.add("activediv")
                 })
             })
-
-
-let filterbtn = document.querySelector(".filterbtn");
-let filterdiv = document.querySelector(".filterdiv");
-let closeBtn = document.querySelector(".filtercloseBtn");
-
-// Open filter
-filterbtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    filterdiv.style.left = "0";
-});
-
-// Close filter
-closeBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    filterdiv.style.left = "-350px";
-});
-
-// 🔒 Prevent clicks inside filter from closing it
-filterdiv.addEventListener("click", (e) => {
-    e.stopPropagation();
-});
-
-// Fix issue when resizing screen
-window.addEventListener("resize", () => {
-    if (window.innerWidth > 992) {
-        filterdiv.classList.remove("active");
-        filterdiv.style.left = "0";
-    } else {
-        filterdiv.style.left = "-350px";
-    }
-});
-
-  
-  
-  
 //   filter portion of the shop page
             document.querySelectorAll(".mainfilterlist > li").forEach(list => {
 
@@ -538,7 +502,7 @@ window.addEventListener("resize", () => {
     const minus = list.querySelector(".bi-dash");
 
     // Toggle dropdown
-    header.addEventListener("click", () => {
+    header.addEventListener("click", (e) => {
         subList.classList.toggle("togglemylist");
  if (!e.target.closest(".mainfilterlistdiv")) return;
         if (subList.classList.contains("togglemylist")) {
@@ -550,6 +514,53 @@ window.addEventListener("resize", () => {
         }
     });
 });
+
+
+let filterbtn = document.querySelector(".filterbtn");
+let filterdiv = document.querySelector(".filterdiv");
+let closeBtn = document.querySelector(".filtercloseBtn");
+
+// open filter
+filterbtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    filterdiv.style.left = "0";
+    document.body.style.overflow = "hidden"; // optional but recommended
+});
+
+// close filter
+closeBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    filterdiv.style.left = "-350px";
+    document.body.style.overflow = "";
+});
+
+// prevent inside clicks
+filterdiv.addEventListener("click", (e) => {
+    e.stopPropagation();
+});
+
+// close when clicking outside
+document.addEventListener("click", () => {
+    if (window.innerWidth <= 992) {
+        filterdiv.style.left = "-350px";
+        document.body.style.overflow = "";
+    }
+});
+
+
+// Fix issue when resizing screen
+// window.addEventListener("resize", () => {
+//     if (window.innerWidth > 992) {
+//         filterdiv.classList.remove("active");
+//         filterdiv.style.left = "0";
+//     } else {
+//         filterdiv.style.left = "-350px";
+//     }
+// });
+
+  
+  
+  
 
 
 // PRICE FILTER BUTTON
