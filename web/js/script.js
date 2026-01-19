@@ -32,3 +32,13 @@ document.querySelectorAll(".has-dropdown").forEach(item => {
         item.classList.toggle("active");
     });
 });
+
+document.querySelector(".bi-facebook").addEventListener("click", ()=>{
+    window.open("", "_blank")
+})
+document.querySelector(".bi-whatsapp").addEventListener("click", ()=>{
+    window.open("", "_blank")
+})
+document.querySelector(".bi-instagram").addEventListener("click", ()=>{
+    window.open("", "_blank")
+})

@@ -749,6 +749,7 @@ font-size: 14px;
 .price-inputs {
     display: flex;
     gap: 10px;
+    padding: 0 1rem;
 }
 
 .price-inputs input {
@@ -1008,35 +1009,6 @@ form textarea:focus {
 }
 
 
-/* dashboard page */
-/* .mainleftdiv{
-    background-color: #000;
-    height: 100vh;
-    width: 280px;
-    position: fixed;
-    left: -350px; 
-
-}
-.arrowicon{
-    text-align: end;
-    margin-bottom: 2rem;
-}
-.arrowicon i{
-    background-color: #e65c00;
-    color: #fff;
-    font-size: 1.5rem;
-    padding:0.7rem 1rem;
-    border-radius: 50%;
-    display: inline-block;
-    transform: translate(50% , 1rem);
-}
-.mainleftdiv li{
-color: #fff;
-border-bottom: 2px solid #fff;
-padding: 1rem ;
-
-} */
-
 /* ================= DASHBOARD ================= */
 
 .user-dashboard {
@@ -1056,22 +1028,7 @@ padding: 1rem ;
    
 }
 
-/* .arrowicon {
-  text-align: right;
-  margin-bottom: 30px;
-}
 
-.arrowicon i {
-  background-color: #e65c00;
-  color: #fff;
-  font-size: 1.3rem;
-  padding: 10px 14px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: inline-block;
-  transition: all 0.3s;
-  transform: translateX(80%);
-} */
 
 .mainleftdiv ul {
   list-style: none;
@@ -1096,7 +1053,7 @@ padding: 1rem ;
 /* RIGHT CONTENT */
 .mainrightdiv {
   flex: 1;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 #dashboardContent {
@@ -1141,8 +1098,11 @@ padding: 1rem ;
   }
 .mainleftdiv{
     width: 100%;
+    padding: 0;
 }
- 
+ .mainleftdiv li{
+    border-radius: 0;
+ }
 }
 
 /* ===== PROFILE SECTION ===== */
@@ -1180,6 +1140,13 @@ padding: 1rem ;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+@media (max-width:375px) {
+    .profile-info strong {
+  display: inline;
+ margin-right: 1rem;
+}
+
 }
 
 /* Wishlist */

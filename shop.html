@@ -560,6 +560,12 @@ if (applyBtn) {
     });
 }
 
+document.querySelectorAll(".price-filter").forEach(filter => {
+    filter.addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
+});
+
 // 
  document.querySelectorAll(".productcardcategory").forEach(categoryBox => {
   const items = categoryBox.querySelectorAll("li");
