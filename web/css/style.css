@@ -179,6 +179,7 @@ text-transform: uppercase;
 }
 .has-dropdown.active .submenu {
     max-height: 600px;
+    width: 80%;
 }
 .has-dropdown.active .arrow {
     transform: rotate(90deg);
@@ -221,7 +222,7 @@ text-transform: uppercase;
 }
 
 .submenu li:hover {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     cursor: pointer;
 }
 @media (max-width: 576px) {
@@ -337,6 +338,7 @@ transform: scale(1.1);
 
 
 /* product card */
+
 .productcard > div{
   border: 1px solid rgba(128, 128, 128, 0.768);
   border-radius: 10px;
@@ -350,9 +352,15 @@ transform: scale(1.1);
 }
 .productcardtext{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f8f9fa;
 }
+
+
+
 .productcardtext > div p:first-child{
   font-weight: 700;
   text-transform: capitalize;
@@ -383,6 +391,7 @@ transform: scale(1.1);
   color: #000;
   font-size: 1.25rem;
 }
+
 @media (max-width:992px) {
     .productcardtext > div p:first-child{
         font-size: 14px;
@@ -396,7 +405,10 @@ transform: scale(1.1);
     .productcardtext > div p:first-child{
         width:120px;
     }
+   
 }
+
+
 .productcardcategory{
     overflow-x: auto;
     scrollbar-width: none;
@@ -737,10 +749,7 @@ text-transform: uppercase;
 min-width:max-content;
 font-size: 14px;
 }
-.c_active{
-    background-color: #000000;
-    color: #fff;
-}
+
 .price-filter {
     flex-direction: column;
     gap: 10px;
@@ -1163,42 +1172,4 @@ form textarea:focus {
 }
 
 /* Bottom Bar */
-.productcardtext{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background: #f8f9fa;
-}
-
-.product-title{
-    margin: 0;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.product-price{
-    margin: 0;
-    font-size: 13px;
-}
-
-/* Add to Cart */
-.cart-btn{
-    background: #000;
-    color: #fff;
-    padding: 8px 10px;
-    border-radius: 6px;
-    font-size: 16px;
-}
-
-/* Mobile Responsive */
-@media(max-width:576px){
-    .product-title{
-        font-size: 13px;
-    }
-    .cart-btn{
-        padding: 6px 8px;
-        font-size: 14px;
-    }
-}
 
