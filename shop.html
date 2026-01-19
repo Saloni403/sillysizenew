@@ -495,21 +495,25 @@
             })
 
 
-          let filterbtn = document.querySelector(".filterbtn");
+let filterbtn = document.querySelector(".filterbtn");
 let filterdiv = document.querySelector(".filterdiv");
 let closeBtn = document.querySelector(".filtercloseBtn");
 
+// Open filter
 filterbtn.addEventListener("click", (e) => {
     e.stopPropagation();
     filterdiv.style.left = "0";
 });
 
-filterdiv.addEventListener("click", (e) => {
+// Close filter
+closeBtn.addEventListener("click", (e) => {
     e.stopPropagation();
+    filterdiv.style.left = "-350px";
 });
 
-document.addEventListener("click", () => {
-    filterdiv.style.left = "-350px";
+// 🔒 Prevent clicks inside filter from closing it
+filterdiv.addEventListener("click", (e) => {
+    e.stopPropagation();
 });
 
 // Fix issue when resizing screen
