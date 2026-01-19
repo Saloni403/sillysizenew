@@ -499,16 +499,17 @@
 let filterdiv = document.querySelector(".filterdiv");
 let closeBtn = document.querySelector(".filtercloseBtn");
 
-// Open filter
 filterbtn.addEventListener("click", (e) => {
+    e.stopPropagation();
     filterdiv.style.left = "0";
-e.stopPropagation();
 });
 
-// Close filter
-closeBtn.addEventListener("click", () => {
-     filterdiv.style.left = "-350px";
-    //  e.stopPropagation();
+filterdiv.addEventListener("click", (e) => {
+    e.stopPropagation();
+});
+
+document.addEventListener("click", () => {
+    filterdiv.style.left = "-350px";
 });
 
 // Fix issue when resizing screen
