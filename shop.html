@@ -500,13 +500,15 @@ let filterdiv = document.querySelector(".filterdiv");
 let closeBtn = document.querySelector(".filtercloseBtn");
 
 // Open filter
-filterbtn.addEventListener("click", () => {
+filterbtn.addEventListener("click", (e) => {
     filterdiv.style.left = "0";
+e.stopPropagation();
 });
 
 // Close filter
 closeBtn.addEventListener("click", () => {
      filterdiv.style.left = "-350px";
+    //  e.stopPropagation();
 });
 
 // Fix issue when resizing screen
