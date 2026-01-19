@@ -533,7 +533,7 @@ window.addEventListener("resize", () => {
     // Toggle dropdown
     header.addEventListener("click", () => {
         subList.classList.toggle("togglemylist");
-
+ if (!e.target.closest(".mainfilterlistdiv")) return;
         if (subList.classList.contains("togglemylist")) {
             plus.style.display = "none";
             minus.style.display = "block";
