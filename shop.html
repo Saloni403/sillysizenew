@@ -283,7 +283,7 @@
             <input type="number" id="maxPrice" placeholder="Max ₹" value="5000">
         </div>
 
-        <button class="apply-btn">Apply</button>
+        <button class="apply-btn" onclick="location.href='#'">Apply</button>
     </div>
 </li>
             </ul>
@@ -548,33 +548,23 @@ document.addEventListener("click", () => {
 });
 
 
-// Fix issue when resizing screen
-// window.addEventListener("resize", () => {
-//     if (window.innerWidth > 992) {
-//         filterdiv.classList.remove("active");
-//         filterdiv.style.left = "0";
-//     } else {
-//         filterdiv.style.left = "-350px";
-//     }
-// });
-
-  
-  
-  
-
 
 // PRICE FILTER BUTTON
 const applyBtn = document.querySelector(".apply-btn");
 
 if (applyBtn) {
     applyBtn.addEventListener("click", (e) => {
-        e.stopPropagation(); // prevent dropdown close
+        // e.stopPropagation(); // prevent dropdown close
 
         let min = document.getElementById("minPrice").value;
         let max = document.getElementById("maxPrice").value;
 
         console.log("Min Price:", min);
         console.log("Max Price:", max);
+
+         e.stopPropagation();
+    filterdiv.style.left = "-350px";
+    document.body.style.overflow = "";
     });
 }
 
